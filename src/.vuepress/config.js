@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'AIoT',
+  title: '民工笔记',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
