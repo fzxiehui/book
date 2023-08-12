@@ -1,10 +1,10 @@
-# AIOT项目文档
+# 民工笔记
 
 ## 构建
 
 ```shell
-# clone 
-# or ssh
+$ git clone git@github.com:fzxiehui/book.git
+$ git clone https://github.com/fzxiehui/book.git
 
 # init 
 
