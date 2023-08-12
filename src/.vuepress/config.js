@@ -34,17 +34,13 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'soft',
+        link: '/soft/'
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'github',
+        link: 'https://github.com/fzxiehui/book'
       },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
     ],
     sidebar: {
       '/guide/': [
@@ -54,6 +50,15 @@ module.exports = {
           children: [
             '',
             'using-vue',
+          ]
+        }
+      ],
+      '/soft/': [
+        {
+          title: '软件',
+          collapsable: false,
+          children: [
+            'go/',
           ]
         }
       ],
