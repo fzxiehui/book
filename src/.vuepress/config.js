@@ -29,40 +29,59 @@ module.exports = {
   themeConfig: {
     repo: '',
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+    docsDir: 'src',
+    editLinkText: 'edit',
+    lastUpdated: true,
     nav: [
       {
-        text: 'soft',
-        link: '/soft/'
+        text: 'Guide',
+        link: '/guide/'
       },
       {
         text: 'github',
         link: 'https://github.com/fzxiehui/book'
       },
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-      '/soft/': [
-        {
-          title: '软件',
-          collapsable: false,
-          children: [
-            'go/',
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      {
+        title: 'Guide',
+        collapsable: false,
+        path: '/guide/',
+        children: [
+          '/guide/',
+          '/guide/using-vue.md',
+        ]
+      },
+      {
+        title: '运维',
+        collapsable: false,
+        path: '/ops/',
+        children: [
+          '/ops/nginx.md',
+          '/ops/docker.md',
+        ]
+      },
+      {
+        title: 'config',
+        collapsable: false,
+        path: '/config/',
+        children: [
+          '/config/',
+        ]
+      },
+    ]
+    // sidebar: {
+    //   '/guide/': [
+    //     {
+    //       title: 'Guide',
+    //       collapsable: false,
+    //       children: [
+    //         '',
+    //         'using-vue',
+    //       ]
+    //     }
+    //   ]
+    // }
   },
 
   /**
