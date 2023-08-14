@@ -1,6 +1,5 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline: book docs 
 actionText: Quick Start →
 actionLink: /guide/
@@ -13,3 +12,5 @@ features:
   details: Feature 3 Description
 footer: Made by fzxiehui with ❤️
 ---
+
+heroImage: assets/images/logo.png
