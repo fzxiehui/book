@@ -1,0 +1,6 @@
+version: '3'
+services:
+  demo1:
+    image: praqma/network-multitool
+    container_name: demo1
+    restart: always
