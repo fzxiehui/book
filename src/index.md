@@ -1,16 +1,15 @@
 ---
 home: true
-tagline: book docs 
-actionText: Quick Start →
+heroImage: logo.png
+tagline: 建设中
+actionText: 进入文档 →
 actionLink: /guide/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+- title: 建设中
+  details: 敬请期待
+- title: 建设中
+  details: 敬请期待
+- title: 建设中
+  details: 敬请期待
 footer: Made by fzxiehui with ❤️
 ---
-
-heroImage: assets/images/logo.png
