@@ -68,7 +68,13 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 - null - 没有网络
 :::
 
-- 自定义``bridge``互通, 通过``docker exec -it demo1 /bin/bash``命令,进入``demo1``容器,执行``ping demo2``,能``ping``通说明通信正常。
-	
+- 自定义``bridge``互通测试
 
-	<<< @/src/code/docker-compose/demo2.yml
+	1. 创建``demo2.yml``文件并写入以下内容:
+
+		<<< @/src/code/docker-compose/demo2.yml
+
+	1. 启动容器``docker-compose -f demo2.yml up -d``
+	1. 通过``docker exec -it demo1 /bin/bash``命令,进入``demo1``容器
+	1. 执行``ping demo2``,能``ping``通说明通信正常。
+	1. 关闭容器``docker-compose -f demo2.yml down``
