@@ -34,22 +34,20 @@ module.exports = {
     lastUpdated: true,
     nav: [
       {
-        text: 'Guide',
+        text: 'Docs',
         link: '/guide/'
       },
       {
-        text: 'github',
+        text: 'Github',
         link: 'https://github.com/fzxiehui/book'
       },
     ],
     sidebar: [
       {
-        title: 'Guide',
+        title: '指引',
         collapsable: false,
         path: '/guide/',
         children: [
-          '/guide/',
-          '/guide/using-vue.md',
         ]
       },
       {
@@ -60,15 +58,7 @@ module.exports = {
           '/ops/nginx.md',
           '/ops/docker.md',
         ]
-      },
-      {
-        title: 'config',
-        collapsable: false,
-        path: '/config/',
-        children: [
-          '/config/',
-        ]
-      },
+      }
     ]
     // sidebar: {
     //   '/guide/': [
