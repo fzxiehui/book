@@ -30,22 +30,22 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 ## 常用命令
 
 - docker
-	1. ``sudo docker network ls`` 查看``docker``网络列表。
-	1. ``sudo docker network rm network``删除网络。
-	1. ``docker ps``查看``docker``容器运行情况。
-	1. ``docker exec -it demo1 /bin/bash``进入容器。
+	1. ``sudo docker network ls`` 查看**docker网络列表**。
+	1. ``sudo docker network rm 网络名``**删除网络**。
+	1. ``docker ps``查看**docker容器运行情况**。
+	1. ``docker exec -it 容器 /bin/bash``**进入容器**。
 	1. 日志
-		- 查看指定日期后的100条日志``docker logs -f -t --since="2023-08-11" --tail=100 CONTAINER_ID``
-		- 查看指定时间后的日志``docker logs -t --since="2023-08-11T15:20:20" CONTAINER_ID``
-		- 查看指定时间段日志``docker logs -t --since="2023-08-11T15:20:20" --until "2023-08-11T15:30:20" CONTAINER_ID``
-		- 实时查看后100条日志``docker logs -f --tail=100 CONTAINER_ID``
-		- 查看30分钟日志: ``docker logs --since 30m CONTAINER_ID``
+		- 查看指定日期后的100条日志``docker logs -f -t --since="2023-08-11" --tail=100 容器``
+		- 查看指定时间后的日志``docker logs -t --since="2023-08-11T15:20:20" 容器``
+		- 查看指定时间段日志``docker logs -t --since="2023-08-11T15:20:20" --until "2023-08-11T15:30:20" 容器``
+		- 实时查看后100条日志``docker logs -f --tail=100 容器``
+		- 查看30分钟日志: ``docker logs --since 30m 容器``
 
 
 - docker-compose
 
-	1. 运行``docker-compose -f demo1.yml up -d``
-	1. 关闭容器``docker-compose -f demo1.yml down``
+	1. 运行``docker-compose -f 配置文件 up -d``
+	1. 关闭容器``docker-compose -f 配置文件 down``
 
 ## 运行第一个docker-compose
 
