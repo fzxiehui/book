@@ -39,7 +39,7 @@ $ sudo apt install nginx
 
 1. ``/etc/nginx/nginx.conf`` 配置文件中定义了``nginx``部分默认配置.
 
-	- 部署前端应用时可能出现*无访问权限问题*，可以确认``nginx.conf``文件中的 ``user`` 与当前系统用户是否一致，``nginx`` 默认为 ``wwww-data``.
+	- 部署前端应用时可能出现**无访问权限问题**，可以确认``nginx.conf``文件中的 ``user`` 与当前系统用户是否一致，``nginx`` 默认为 ``wwww-data``.
 
 	::: details 点击查看完整配置文件
 	<<< @/src/code/nginx/nginx.conf{1}
