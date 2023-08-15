@@ -57,6 +57,7 @@ module.exports = {
         children: [
           '/ops/nginx.md',
           '/ops/docker.md',
+          '/ops/docker_server.md',
         ]
       },
       {
