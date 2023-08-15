@@ -58,6 +58,14 @@ module.exports = {
           '/ops/nginx.md',
           '/ops/docker.md',
         ]
+      },
+      {
+        title: '个性化设置',
+        collapsable: false,
+        path: '/habit/',
+        children: [
+          '/habit/ubuntu.md',
+        ]
       }
     ]
     // sidebar: {
