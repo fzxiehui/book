@@ -17,8 +17,11 @@ sudo systemctl stop 服务名称
 # 查看服务状态
 systemctl status 服务名称
 
-# 启用服务
+# 启用服务(开机自启动)
 sudo systemctl enable 服务名称
+
+# 禁用服务(停业开机自启动)
+sudo systemctl disable 服务名称
 
 # 查看日志
 journalctl -u 服务名称.service -f
