@@ -48,6 +48,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 
 	1. 运行``docker-compose -f 配置文件 up -d``
 	1. 关闭容器``docker-compose -f 配置文件 down``
+	1. 查看运行容器配置文件位置``docker-compose ls``
 
 ## 运行第一个docker-compose
 
