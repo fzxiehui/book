@@ -68,7 +68,15 @@ module.exports = {
         children: [
           '/habit/ubuntu.md',
         ]
-      }
+      },
+      {
+        title: '奇技淫巧',
+        collapsable: false,
+        path: '/acrobatics/',
+        children: [
+          '/acrobatics/linux.md',
+        ]
+      },
     ]
     // sidebar: {
     //   '/guide/': [
