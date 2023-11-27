@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: logo.png
-tagline: 建设中
+heroImage: bambi.jpg
+tagline: 赤诚、勇敢、自洽、欢喜。
 actionText: 进入文档 →
 actionLink: /guide/
 features:
