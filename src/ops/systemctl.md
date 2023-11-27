@@ -35,9 +35,9 @@ Description= 自定义可以有的空格
 After= 依赖与哪个服务,一般填network.target在网络正常时开启
 
 [Service]
-Type= 一般填simple 会执行ExecStart执行， \
-				forking会fork一个子进程来运，父进程会立即退出, \
-				如果使用fork 最好配合PIDFile使用
+Type= 一般填simple 会通过ExecStart指令来执行， \
+				forking会fork一个子进程来运行，父进程会立即退出, \
+				如果使用forking 最好配合PIDFile使用, 这样可以对其进行重启、停止等操作
 
 User= 运行的用户一般为 nobody, 不过如果涉及到一些用户权限相关的事件 \
 				如,操作串口等行为，最好写明是哪个用户,否则会出现权限问题。
