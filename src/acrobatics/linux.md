@@ -14,7 +14,10 @@
 
 	```shell
 	# --block-size=M 以M 为统计单位
+	# ls 只对文件有用,目录大小固定 4k
 	ls -l --block-size=M
+	# or
+	ls -lh
 	```
 
 - 文件占用分析(du)
