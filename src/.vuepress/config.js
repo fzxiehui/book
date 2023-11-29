@@ -75,6 +75,7 @@ module.exports = {
         path: '/acrobatics/',
         children: [
           '/acrobatics/linux.md',
+          '/acrobatics/npm.md',
         ]
       },
     ]
