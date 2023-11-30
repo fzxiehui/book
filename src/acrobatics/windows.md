@@ -16,7 +16,7 @@
 - 使用
 
 	1. 解压文件
-	1. 请以管理员身份运行`cmd`或`PowerShell`并进入`win32`或`win64`目录。
+	1. **请以管理员身份**运行`cmd`或`PowerShell`并进入`win32`或`win64`目录。
 	1. 在`cmd`中输入 `.\nssm.exe install`, 即可弹出以下图形界面, 其中`Path`为软件绝对路径,
 		`Startup directory` 为工作目录, `Arguments` 为运行参数。
 	
@@ -44,3 +44,22 @@
 
 		- 具有开机自启功能。
 		- 具有失败自动重启功能并且没有延时，对于启动加载内容比较多的服务，建议添加重启延时。
+
+### 常用指令
+
+- 安装、编辑
+
+	- 安装`nssm install`
+	- 编辑`nssm edit 服务名`
+
+- 启动、停止、重启、状态
+
+	- 启动`nssm start 服务名`
+	- 停止`nssm stop 服务名`
+	- 重启`nssm restart 服务名`
+	- 状态`nssm status 服务名`
+
+- 删除、删除自动确认
+
+	- 删除`nssm remove 服务名`
+	- 删除自动确认`nssm remove 服务名 confirm`
