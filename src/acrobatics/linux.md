@@ -27,6 +27,8 @@
 	# -k 代表以 K 为统计单位, 可以改为 -m 统计单位 M 
 	# --max-depth=1 代表递归深度为1
 	du -k --max-depth=1 src/
+	# or 
+	du -lh 
 	```
 
 ## 进程
