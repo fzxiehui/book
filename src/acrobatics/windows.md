@@ -63,3 +63,11 @@
 
 	- 删除`nssm remove 服务名`
 	- 删除自动确认`nssm remove 服务名 confirm`
+
+### 安装脚本
+
+- thumper
+	
+	::: details 点击查看完整安装脚本
+	<<< @/src/code/cmd/install_service.bat
+	::: 
