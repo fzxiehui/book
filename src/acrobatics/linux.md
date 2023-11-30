@@ -28,10 +28,33 @@
 	# --max-depth=1 代表递归深度为1
 	du -k --max-depth=1 src/
 	# or 
+	# 统计大小 可以加上 -s 参数
 	du -lh 
 	```
 
 ## 进程
+
+## 日志及系统信息
+
+- 查看系统日志
+
+	```shell
+	tail -f /var/log/syslog
+	```
+
+- 系统版本信息
+
+	```shell
+	cat /etc/os-release
+	```
+
+- 查看硬件信息
+
+	```shell
+	lshw
+	# or
+	lspci
+	```
 
 ## 端口
 
