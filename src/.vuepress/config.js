@@ -70,6 +70,14 @@ module.exports = {
         ]
       },
       {
+        title: 'Golang',
+        collapsable: false,
+        path: '/golang/',
+        children: [
+          '/golang/websocket.md',
+        ]
+      },
+      {
         title: '奇技淫巧',
         collapsable: false,
         path: '/acrobatics/',
