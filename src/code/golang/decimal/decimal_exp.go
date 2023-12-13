@@ -23,5 +23,5 @@ func main() {
 	// 四舍五入, 保留两位小数
 	fmt.Println(a.Round(2).Float64()) // 0.13 false
 	// 舍弃, 保留两位小数
-	fmt.Println(a.Truncate(2).Float64()) // 0.13 false
+	fmt.Println(a.Truncate(2).Float64()) // 0.12 false
 }
