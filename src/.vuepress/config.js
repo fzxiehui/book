@@ -79,6 +79,14 @@ module.exports = {
         ]
       },
       {
+        title: 'OpenCV',
+        collapsable: false,
+        path: '/opencv/',
+        children: [
+          '/opencv/quick_start.md',
+        ]
+      },
+      {
         title: '奇技淫巧',
         collapsable: false,
         path: '/acrobatics/',
