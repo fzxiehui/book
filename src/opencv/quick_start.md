@@ -35,3 +35,25 @@
 - 代码
 
 	<<< @/src/code/opencv/bambi/demo1.py
+
+## 错误处理
+
+- 环境 `ubuntu 1804`、`Python 3.6.9` 
+
+- 在 `cv.imshow` 时出错
+
+- 错误信息
+
+	```shell
+	Traceback (most recent call last):
+		File "demo2_match_multiple.py", line 16, in <module>
+			cv.imshow('Farm', farm)
+	cv2.error: OpenCV(4.8.1) /tmp/pip-install-l81yjbpj/opencv-python_63613bce6d2547a5893bf9d9440c254f/opencv/modules/highgui/src/window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+	```
+
+- 解决方法
+
+	```shell
+	sudo apt install libgtk2.0-dev pkg-config
+	pip install opencv-contrib-python
+	```
