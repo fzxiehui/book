@@ -18,7 +18,7 @@
 	```
 
 
-## Bambi 模板匹配
+## 模板匹配(找到Bambi的脸)
 
 - 准备`bambi_temp.png` 与 `bambi.png `图像并放在 `./bambi` 目录中
 
