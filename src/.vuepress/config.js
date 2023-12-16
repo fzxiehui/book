@@ -84,6 +84,7 @@ module.exports = {
         path: '/opencv/',
         children: [
           '/opencv/quick_start.md',
+          '/opencv/match_multiple.md',
         ]
       },
       {
