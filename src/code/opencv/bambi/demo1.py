@@ -31,7 +31,7 @@ result = cv.matchTemplate(bambi, # 图像
 
 # 保存图像, 匹配的中心点为 白色 即 255, 
 # 写入时需要放大255倍，因为内存中是以 0.x表示
-# 与文件 0 - 255 表示发不一样
+# 与图像的 0 - 255 表示法, 不一样
 cv.imwrite('./bambi/bambi_result.png', result * 255)
 
 # 查看匹配图 
