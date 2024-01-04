@@ -74,9 +74,10 @@ module.exports = {
         collapsable: false,
         path: '/golang/',
         children: [
+          '/golang/install.md',
+          '/golang/build.md',
           '/golang/websocket.md',
           '/golang/decimal.md',
-          '/golang/build.md',
         ]
       },
       {
