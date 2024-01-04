@@ -76,6 +76,7 @@ module.exports = {
         children: [
           '/golang/websocket.md',
           '/golang/decimal.md',
+          '/golang/build.md',
         ]
       },
       {
