@@ -21,6 +21,8 @@
 - <a href="mailto:1059248139@qq.com">点这里,快速发送邮件(1059248139@qq.com)</a> 
 :::
 
+<p style="background-color:#1E90FF; color:#F0F8FF">至自己：学会放下</p>
+
 ## 道
 
 ::: tip 道
@@ -58,7 +60,8 @@
 玄之有玄，众眇之门。
 </strong>
 </big>
-<sub>TODO</sub>
+<sub>两个角度出处与目的相同，只是名称不同。
+玄：将两线缠绕在一起呈螺旋状，眇：微妙；深奥玄妙；很难捉摸。</sub>
 </p>
 
 <blockquote>
