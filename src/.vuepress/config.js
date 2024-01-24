@@ -99,6 +99,14 @@ module.exports = {
           '/acrobatics/npm.md',
         ]
       },
+      {
+        title: '经典文学',
+        collapsable: false,
+        path: '/classics/',
+        children: [
+          '/classics/TaoTeChing.md',
+        ]
+      },
     ]
     // sidebar: {
     //   '/guide/': [
