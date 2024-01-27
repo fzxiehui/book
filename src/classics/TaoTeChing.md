@@ -2,17 +2,13 @@
 
 ::: tip 参考引用
 
-原文引用
-<a href="https://xqdoc.imedao.com/155824e6bd6c7a3fd921c004.pdf" target="_blank">
+原文引用: <a href="https://xqdoc.imedao.com/155824e6bd6c7a3fd921c004.pdf" target="_blank">
 《长沙马王堆帛书老子〉甲乙本合订校订本》(肖钢帛书《老子》合订校定本)
 </a>
 
-参考名家:
+参考名家: <a href="https://baike.baidu.com/item/%E7%BD%97%E5%A4%A7%E4%BC%A6/4841169" target="_blank">罗大伦，北京中医药大学中医诊断学博士</a>
 
-- <a href="https://baike.baidu.com/item/%E7%BD%97%E5%A4%A7%E4%BC%A6/4841169" target="_blank">罗大伦，北京中医药大学中医诊断学博士</a>
-
-参考作品:
-- <a href="https://m.ximalaya.com/album/3623979" target="_blank">喜马拉雅：每天聊点《道德经》（罗大伦）（音频节目）</a>
+参考作品: <a href="https://m.ximalaya.com/album/3623979" target="_blank">喜马拉雅：每天聊点《道德经》（罗大伦）（音频节目）</a>
 
 :::
 
@@ -21,14 +17,19 @@
 - <a href="mailto:1059248139@qq.com">点这里,快速发送邮件(1059248139@qq.com)</a> 
 :::
 
-<p style="background-color:#1E90FF; color:#F0F8FF">至自己：学会放下</p>
+<p style="background-color:#1E90FF; color:#F0F8FF">致自己：学会放下</p>
 
 ## 道
 
-::: tip 道
-世界、事物、观念是变化的，试图永远拥有，必然带来烦恼，不要执着于任何事、物、观念要学会放下。
-世界是一个整体，释放的每一个善意、恶意都会被放大并反馈，尽量做到无我利他。
+::: danger 道
+
+- 一个神秘力量创建了个世界，《道德经》中称为道。
+- 意义：
+	- 世界、事物、观念是变化的，试图永远拥有，必然带来烦恼，不要执着于任何事、物、观念要学会放下。
+	- 世界是一个整体，释放的每一个善意、恶意都会被放大并反馈，尽量做到无我利他。
 :::
+
+## 道篇：第一章 ～ 第五章
 
 ### 第一章
 
