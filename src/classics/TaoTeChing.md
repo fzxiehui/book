@@ -8,7 +8,9 @@
 
 参考名家: <a href="https://baike.baidu.com/item/%E7%BD%97%E5%A4%A7%E4%BC%A6/4841169" target="_blank">罗大伦，北京中医药大学中医诊断学博士</a>
 
-参考作品: <a href="https://m.ximalaya.com/album/3623979" target="_blank">喜马拉雅：每天聊点《道德经》（罗大伦）（音频节目）</a>
+参考作品: 
+- <a href="https://m.ximalaya.com/album/3623979" target="_blank">喜马拉雅：每天聊点《道德经》（罗大伦）（音频节目）</a>
+- <a href="https://www.5000yan.com/mulu/" target="_blank">5000言</a>
 
 :::
 
@@ -189,6 +191,44 @@
 <ul>
 <li>
 (1) 不要树立楷模，这样会否定大多数人。
+</li>
+</ul>
+</blockquote>
+
+### 第四章
+
+<p style="text-indent: 2em;">
+<big>
+<strong>
+道冲(盅)，而用之有弗盈也。
+</strong>
+</big>
+<sup>(1)</sup>
+<sub>大道是空虚无形的，但它发生作用时却永无止境。</sub>
+<big>
+<strong>
+渊呵！始万物之宗。
+</strong>
+</big>
+<sub>它如深渊一样广大，像是世间万物的宗主。</sub>
+<big>
+<strong>
+<del>锉其锐，解其纷；和其光，同其尘。</del>湛呵！似或存。
+</strong>
+</big>
+<sub><del>它不显露锋芒，解除世间的纷乱，收敛它的光耀，混同它于尘世。</del>它看起来幽隐虚无却又实际存在。</sub>
+<big>
+<strong>
+吾不知谁子也，象帝之先。
+</strong>
+</big>
+<sub>我不知道它是从哪里产生出来的，<del>好像在天帝之前就已经有了。</del>道是凌驾于我们所认为的世界</sub>
+</p>
+
+<blockquote>
+<ul>
+<li>
+(1) 道保持虚空的状态。
 </li>
 </ul>
 </blockquote>
