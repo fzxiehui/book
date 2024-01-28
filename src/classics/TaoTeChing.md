@@ -277,4 +277,66 @@
 </ul>
 </blockquote>
 
+## 道篇：第六章 ～ 第十章
+
+### 第六章
+
+<p style="text-indent: 2em;">
+<big>
+<strong>
+谷（浴）神不死，是谓玄牝<sup>(pìn)</sup>。
+</strong>
+</big>
+<sub>
+虚空不定的变化是永不停歇的，这就是生育万物的神秘莫测的总根源。
+</sub>
+<big>
+<strong>
+玄牝<sup>(pìn)</sup>之门，是谓天地之根。绵绵呵若存！用之不堇。
+</strong>
+</big>
+<sub>
+微妙的生母之门，就是天地生成的根源。它绵绵不绝地存在着，作用无穷无尽。
+</sub>
+</p>
+
+### 第七章
+
+<p style="text-indent: 2em;">
+<big>
+<strong>
+天长，地久。天地之所以能长且久者，以其不自生也，故能长生。是以声人芮其身而身先，外其身而身存；不以其无私与，故能成其私。
+</strong>
+</big>
+</p>
+
+### 第八章
+
+<p style="text-indent: 2em;">
+<big>
+<strong>
+上善如水。水善，利万物而有静，居众之所恶，故几于道矣。居善地，心善渊，予善信，政善治，事善能，踵善时。夫唯不静，故无尤。
+</strong>
+</big>
+</p>
+
+### 第九章
+
+<p style="text-indent: 2em;">
+<big>
+<strong>
+而盈之，不若其已。而棁之，不可常葆之。金玉盈室，莫之守也。贵富而骄，自遗咎也。功述身芮，天之道也。
+</strong>
+</big>
+</p>
+
+### 第十章
+
+<p style="text-indent: 2em;">
+<big>
+<strong>
+戴营魄抱一，能毋离乎？槫气致柔，能婴儿乎？修除玄蓝，能毋疵乎？爱民栝国，能毋以知乎？天门启阖，能无雌乎？明白四达，能毋以知乎？生之、畜之，生而弗有，长而弗宰也，是谓玄德。
+</strong>
+</big>
+</p>
 <div style="background-color:#1E90FF; color:#F0F8FF; font-size: 33px;">编写中，敬请期待！</div>
