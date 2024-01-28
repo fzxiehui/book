@@ -4,6 +4,7 @@ systemctl 可以做什么? @TODO
 
 :::danger 重要
 配置文件目录``/etc/systemd/system/``
+配置文件名``xxx.service``
 :::
 
 ## 命令
@@ -25,6 +26,9 @@ sudo systemctl disable 服务名称
 
 # 查看日志
 journalctl -u 服务名称.service -f
+
+# 重新加载配置文件 
+sudo systemctl daemon-reload
 ```
 
 ## 配置模板
