@@ -23,10 +23,10 @@
 
 ## 修改系统默认编辑器为`vi`
 
-	```shell
-	echo export EDITOR=/usr/bin/vi >> ~/.bashrc
-	source ~/.bashrc
-	```
+```shell
+echo export EDITOR=/usr/bin/vi >> ~/.bashrc
+source ~/.bashrc
+```
 
 ## `vim` & `neovim` 使用系统剪贴板
 
