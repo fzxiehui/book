@@ -8,10 +8,31 @@
 	sudo apt install xclip
 	```
 
-2. 在`init.vim`添加
+1. 在`init.vim`添加
 
 	```shell
 	set clipboard+=unnamedplus
+	```
+
+## 使用 `https` 访问 `github ssh`
+
+1. 测试端口
+	```shell
+	# 测试超时 22
+	ssh -T git@github.com
+	
+	# 测试 成功! 443 
+	ssh -T -p 443 git@ssh.github.com
+	```
+
+1. 修改配置
+
+	```shell
+	vim ~/.ssh/config
+	# 添加以下内容
+	Host github.com
+	Hostname ssh.github.com
+	Port 443
 	```
 
 ## 硬盘管理
