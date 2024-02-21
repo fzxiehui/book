@@ -25,6 +25,7 @@
 
 	```shell
 	echo export EDITOR=/usr/bin/vi >> ~/.bashrc
+	source ~/.bashrc
 	```
 
 ## `vim` & `neovim` 使用系统剪贴板
