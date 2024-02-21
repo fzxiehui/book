@@ -1,5 +1,19 @@
 # Linux
 
+## `vim` & `neovim` 使用系统剪贴板
+
+1. 安装`xclip`
+	
+	```shell
+	sudo apt install xclip
+	```
+
+2. 在`init.vim`添加
+
+	```shell
+	set clipboard+=unnamedplus
+	```
+
 ## 硬盘管理
 
 - 硬盘总体情况
