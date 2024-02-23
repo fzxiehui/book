@@ -14,7 +14,7 @@
 - `Alt` + `B`  : 光标后退一格单词
 - `ctrl` + `W` : 删除光标前的单词(Word, 不包含空格的字符串)
 - `ctrl` + `Z` : 把当前进程放到后台（之后可用''fg''命令回到前台） 
-- `ctrl ` + `X ctrl ` + `E` : 调出系统默认编辑器编辑当前输入的命令，退出编辑器时，命令执行
+- `ctrl` + `X` `ctrl` + `E` : 调出系统默认编辑器编辑当前输入的命令，退出编辑器时，命令执行
 
 - 历史命令：
 	- `ctrl ` + `P` : 上一条命令，可以一直按表示一直往前翻
@@ -59,8 +59,8 @@ source ~/.bashrc
 	vim ~/.ssh/config
 	# 添加以下内容
 	Host github.com
-	Hostname ssh.github.com
-	Port 443
+		Hostname ssh.github.com
+		Port 443
 	```
 
 ## 硬盘管理
