@@ -38,13 +38,13 @@ $ sudo apt-get install fcitx fcitx-table-wbpy
 1. 添加代理快捷指令
 
 	```shell
-	alias proxy='export http://127.0.0.1:7890; export https://127.0.0.1:7890'
+	alias proxy='export http_proxy=http://172.16.1.253:7890; export https_proxy=http://172.16.1.253:7890; export all_proxy=socks5://172.16.1.253:7890'
 	```
 
 1. 取消代理快捷指令
 
 	```shell
-	alias unproxy='unset http_proxy; unset https_proxy'
+	alias unproxy='unset http_proxy; unset https_proxy; unset all_proxy'
 	```
 
 	
