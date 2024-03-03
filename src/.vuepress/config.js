@@ -68,6 +68,7 @@ module.exports = {
         path: '/habit/',
         children: [
           '/habit/ubuntu.md',
+          '/habit/vim.md',
         ]
       },
       {
