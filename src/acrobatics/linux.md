@@ -21,10 +21,19 @@
 	- `ctrl ` + `N` : 下一条命令
 	- `ctrl ` + `R`，再按历史命令中出现过的字符串：按字符串寻找历史命令（重度推荐）
 
+## `ssh` 免密登录
+
+```shell
+ssh-copy-id username@remote-server
+# e.g:
+ssh-copy-id hello@172.16.1.251
+# 相当于在 ~/.ssh/authorized_keys 追加公钥
+```
+
 ## 修改系统默认编辑器为`vi`
 
 ```shell
-echo export EDITOR=/usr/bin/vi >> ~/.bashrc
+echo "export EDITOR=/usr/bin/vi" >> ~/.bashrc
 source ~/.bashrc
 ```
 
