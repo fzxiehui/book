@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  svn:
+    container_name: svn
+    image: elleflorio/svn-server:issue-19
+    restart: always
+    volumes: 
+      - ./repo/:/home/svn/:rw
+      - ./config/:/etc/subversion/:rw
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 3690:3690
+      - 13690:80
