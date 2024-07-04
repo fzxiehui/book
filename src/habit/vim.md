@@ -15,6 +15,8 @@ sudo tar -zxvf nvim-linux64.tar.gz
 
 ```shell
 echo "export PATH="/usr/local/nvim-linux64/bin:\$PATH"" >> ~/.bashrc
+# 设置默认编辑器
+echo export EDITOR=/usr/local/nvim-linux64/bin/nvim >> ~/.bashrc
 source ~/.bashrc
 ```
 
