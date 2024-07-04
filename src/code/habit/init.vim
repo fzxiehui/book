@@ -22,7 +22,7 @@ Plug 'vim-airline/vim-airline-themes' "airline 的主题
 Plug 'scrooloose/nerdcommenter'
 
 " githubcopilot
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 
 " 嵌套括号高亮插件
 Plug 'luochen1990/rainbow'

@@ -27,8 +27,8 @@ source ~/.bashrc
 sudo apt install curl
 
 # install pip, pip3
-sudo apt install python-pip
-sudo apt install python3-pip
+# sudo apt install python-pip
+# sudo apt install python3-pip
 
 # install npm, nodejs
 sudo apt install npm
@@ -39,8 +39,8 @@ sudo n v16.15.0
 
 # install neovim, pynvim
 sudo npm install -g neovim
-sudo pip3 install pynvim
-sudo pip install pynvim
+# sudo pip3 install pynvim
+# sudo pip install pynvim
 
 # install git
 sudo apt install git
@@ -55,11 +55,11 @@ sudo apt install silversearcher-ag
 sudo apt install xclip
 ```
 
-## nvim 配置文件
+## nvim 配置文件`~/.config/nvim/init.vim`
 
 <<< @/src/code/habit/init.vim
 
-## coc配置文件
+## coc配置文件`~/.config/nvim/coc-settings.json`
 
 <<< @/src/code/habit/coc-settings.json
 
