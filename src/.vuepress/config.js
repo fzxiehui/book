@@ -57,6 +57,7 @@ module.exports = {
         children: [
           '/ops/systemctl.md',
           '/ops/iptables.md',
+          '/ops/disk.md',
           '/ops/nginx.md',
           '/ops/docker.md',
           '/ops/docker_server.md',
