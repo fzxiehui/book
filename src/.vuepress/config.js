@@ -61,6 +61,7 @@ module.exports = {
           '/ops/nginx.md',
           '/ops/docker.md',
           '/ops/docker_server.md',
+          '/ops/apt.md',
         ]
       },
       {
