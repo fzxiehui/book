@@ -5,7 +5,8 @@
 - 下载
 
 ```shell
-wget https://github.com/neovim/neovim/releases/download/v0.6.1/nvim-linux64.tar.gz
+# wget https://github.com/neovim/neovim/releases/download/v0.6.1/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
 sudo cp nvim-linux64.tar.gz /usr/local/
 cd /usr/local
 sudo tar -zxvf nvim-linux64.tar.gz
