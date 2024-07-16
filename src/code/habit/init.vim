@@ -380,3 +380,6 @@ set encoding=utf-8
 
 " 使用系统剪切板
 set clipboard+=unnamedplus
+
+" 禁用鼠标
+set mouse=""
