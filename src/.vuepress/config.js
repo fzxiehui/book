@@ -55,6 +55,7 @@ module.exports = {
         collapsable: false,
         path: '/ops/',
         children: [
+          '/ops/network.md',
           '/ops/systemctl.md',
           '/ops/iptables.md',
           '/ops/disk.md',
