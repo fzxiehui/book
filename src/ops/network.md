@@ -32,3 +32,21 @@ arp -a
 ```shell
 mtr 8.8.8.8
 ```
+
+## netplan
+
+- `/etc/netplan/01-network-manager-all.yaml`
+
+```yaml
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    eth1:
+      dhcp4: no
+      addresses: [192.168.52.250/24]
+      gateway4: 192.168.52.254
+      nameservers:
+        addresses: [223.5.5.5, 8.8.8.8]
+```
