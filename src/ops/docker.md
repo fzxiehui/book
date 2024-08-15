@@ -81,3 +81,28 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 	1. 通过``docker exec -it demo1 /bin/bash``命令,进入``demo1``容器
 	1. 执行``ping demo2``,能``ping``通说明通信正常。
 	1. 关闭容器``docker-compose -f demo2.yml down``
+
+## docker 导致网络故障
+
+> `docker`容量运行前最好定义`docker`网络，
+否则`docker`会自行创建一个默认网络，
+创建过多网络时就有概率与网关ip冲突，
+可以通过以下命令排查修复。
+
+```shell
+# 查看网络信息
+ip add
+# 删除冲突接口
+sudo ip link delete br-3a61dba4fa5a
+
+# 创建网络(参考)
+docker network create --driver bridge --subnet 192.168.1.0/24 --gateway 192.168.1.0 mynet
+解释：
+--driver bridge 表示使用桥接模式
+--subnet 192.168.1.0/24 表示子网ip 可以分配 192.168.1.2 到 192.168.1.254
+--gateway 192.168.1.0 表示网关
+mynet 表示网络名
+
+# 运行时指定网络 --network (参考)
+docker run ** --network mynet
+```
