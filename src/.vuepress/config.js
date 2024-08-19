@@ -83,6 +83,15 @@ module.exports = {
           '/golang/build.md',
           '/golang/websocket.md',
           '/golang/decimal.md',
+          '/golang/log.md',
+        ]
+      },
+      {
+        title: 'Go自编写软件包',
+        collapsable: false,
+        path: '/gopkg/',
+        children: [
+          '/gopkg/uart.md',
         ]
       },
       {
