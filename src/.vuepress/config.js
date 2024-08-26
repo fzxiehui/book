@@ -66,6 +66,14 @@ module.exports = {
         ]
       },
       {
+        title: '电路设计',
+        collapsable: false,
+        path: '/ad/',
+        children: [
+          '/ad/basis.md',
+        ]
+      },
+      {
         title: '个性化设置',
         collapsable: false,
         path: '/habit/',
