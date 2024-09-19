@@ -51,6 +51,14 @@ module.exports = {
         ]
       },
       {
+        title: 'Linux',
+        collapsable: false,
+        path: '/linux/',
+        children: [
+          '/linux/device.md',
+        ]
+      },
+      {
         title: '运维',
         collapsable: false,
         path: '/ops/',
