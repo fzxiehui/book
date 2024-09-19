@@ -24,7 +24,7 @@
 
 - 设置默认输出
 
-	> 以下两种方式都是创建或修改`/etc/asound.conf`文件
+	> 以下两种方式都是创建或修改`/etc/asound.conf`文件, 通过`sudo alsa force-reload`命令或重启设备生效
 
 	- 方式一(**不推荐**): 无法被多个进线程同时使用
 
@@ -62,3 +62,36 @@
 				}
 		}
 		```
+
+## 音频播放与音量调节
+
+- 音量调节
+
+	可使用`alsamixer`, `F6`选择设备后进行**音量调节**
+
+- 使用默认输出设备播放音频
+
+	```shell
+	aplay test.wav
+	```
+
+- 使用指定设备播放音频
+
+	> 命令: 列出设备`aplay -l` 播放`aplay -D plughw:1,0 test.wav`
+
+	```shell
+	# 列出音频输出设备
+	aplay -l
+	# output:
+	**** List of PLAYBACK Hardware Devices ****
+	card 0: rockchiphdmi [rockchip,hdmi], device 0: fe400000.i2s-i2s-hifi i2s-hifi-0 [fe400000.i2s-i2s-hifi i2s-hifi-0]
+		Subdevices: 1/1
+		Subdevice #0: subdevice #0
+	card 1: rockchiprk809co [rockchip,rk809-codec], device 0: fe410000.i2s-rk817-hifi rk817-hifi-0 [fe410000.i2s-rk817-hifi rk817-hifi-0]
+		Subdevices: 1/1
+		Subdevice #0: subdevice #0
+	
+	# 使用 card 1 , device 0 播放音频
+	aplay -D plughw:1,0 test.wav
+	```
+
