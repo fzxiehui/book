@@ -79,7 +79,7 @@
 
 	> 命令: 列出设备`aplay -l` 播放`aplay -D plughw:1,0 test.wav`
 
-	```shell
+	```shell{1-2,12-13}
 	# 列出音频输出设备
 	aplay -l
 	# output:
