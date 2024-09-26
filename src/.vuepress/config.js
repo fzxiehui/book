@@ -111,6 +111,15 @@ module.exports = {
         ]
       },
       {
+        title: 'Python',
+        collapsable: false,
+        path: '/python/',
+        children: [
+          '/python/venv.md',
+          '/python/net.md',
+        ]
+      },
+      {
         title: 'OpenCV',
         collapsable: false,
         path: '/opencv/',
