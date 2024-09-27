@@ -117,6 +117,7 @@ module.exports = {
         children: [
           '/python/venv.md',
           '/python/net.md',
+          '/python/pack.md',
         ]
       },
       {
