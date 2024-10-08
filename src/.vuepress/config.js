@@ -98,6 +98,7 @@ module.exports = {
           '/golang/install.md',
           '/golang/build.md',
           '/golang/websocket.md',
+          '/golang/context.md',
           '/golang/decimal.md',
           '/golang/log.md',
         ]
