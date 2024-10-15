@@ -1,7 +1,5 @@
 # docker 
 
-docker可以做什么? @TODO
-
 ## 安装
 
 :::tip 提示
@@ -82,6 +80,33 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 	1. 执行``ping demo2``,能``ping``通说明通信正常。
 	1. 关闭容器``docker-compose -f demo2.yml down``
 
+## docker-compose 固定ip
+
+> 其中: `mynet`网络名 `ipv4_address: 192.168.1.10` 固定ip, `myapp: {}` 自动获取
+
+```yaml{6-8,12-13,15-20}
+version: '3'
+
+services:
+  web:
+    image: nginx
+    networks:
+      mynet:
+        ipv4_address: 192.168.1.10
+
+  app:
+    image: myapp
+    networks:
+      mynet: {}
+
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.1.0/24
+```
+
 ## docker 导致网络故障
 
 > `docker`容量运行前最好定义`docker`网络，
@@ -106,3 +131,4 @@ mynet 表示网络名
 # 运行时指定网络 --network (参考)
 docker run ** --network mynet
 ```
+
