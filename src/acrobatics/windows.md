@@ -71,3 +71,42 @@
 	::: details 点击查看完整安装脚本
 	<<< @/src/code/cmd/install_service.bat
 	::: 
+
+### CMD脚本提权
+> 依据空行可以把以上代码划分为4部分功能：
+> - 第1部分，使用 cacls.exe 访问 system 注册表文件，得到一个返回值。
+> - 第2部分，检测这个返回值是否是0，不为0表示访问失败，需要提升权限。
+> - 第3部分，创建一个 getadmin.vbs 脚本文件，写入 用runas以管理员权限创建新的控制台 代码，
+> - 运行这个vbs脚本文件，并退出旧的控制台。
+> - 第4部分，删除vbs脚本，然后在新的控制台中，切换到当前的执行目录。
+> - 第5部分, 需要提权的cmd
+
+```shell
+@echo off
+:: BatchGotAdmin
+:-------------------------------------
+REM  --> Check for permissions
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+
+REM --> If error flag set, we do not have admin.
+if '%errorlevel%' NEQ '0' (
+    echo Requesting administrative privileges...
+    goto UACPrompt
+) else ( goto gotAdmin )
+
+:UACPrompt
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
+    "%temp%\getadmin.vbs"
+    exit /B
+
+:gotAdmin
+    if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
+    pushd "%CD%"
+    CD /D "%~dp0"
+:--------------------------------------
+@echo on
+.\\thumper.exe uninstall
+pause
+```
+
