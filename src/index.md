@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: bambi.jpg
-tagline: 赤诚、勇敢、自洽、欢喜。
+tagline: 不仅要赢，还要赢两次。
 actionText: 进入文档 →
 actionLink: /guide/
 features:
