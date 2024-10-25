@@ -1,5 +1,11 @@
 # 常用服务docker-compose配置
 
+## GitEA
+
+::: details 点击查看配置文件
+<<< @/src/code/docker-compose/gitea.yml
+:::
+
 ## MySQL
 
 ::: details 点击查看配置文件
