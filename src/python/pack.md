@@ -1,5 +1,41 @@
 # 包处理
 
+## 重点
+
+- `json`转`dict`, 与加载`json`
+
+```python
+# dict -> json
+msg = { "hello": "hello" }
+json_data = json.dumps(msg).encode('utf-8')
+data = b'{ "hello": "hello" }'
+json_data = json.loads(data.decode('utf-8'))
+```
+
+## 字节序摘要
+
+> 参考[Python 中的 pack 和 unpack](https://sanyuesha.com/2018/03/10/why-pack-unpack/)
+
+1. 常用序列 
+
+	- `!`网络序`network(=big-endian)`
+	- `<`小端序`little-endian`
+	- `>`大端序`big-endian`
+
+1. 常用类型,**以下全部大写表示无符号**
+
+	- `i` = `int`, `I` = `unsigned int` 大小: `4`
+	- `l` = `long`, `L` = `unsigned long` 大小: `4`
+	- `q` = `long long`, `Q` = `unsigned long long` 大小: `8`
+
+1. 实例
+	
+	```python
+	length = 200
+	length_prefix = struct.pack("!I", length) 
+	length = struct.unpack('!I', length_prefix)[0]
+	```
+
 ## 收发json包
 
 - 发送
