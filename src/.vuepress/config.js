@@ -66,6 +66,7 @@ module.exports = {
           '/ops/network.md',
           '/ops/systemctl.md',
           '/ops/iptables.md',
+          '/ops/frp.md',
           '/ops/disk.md',
           '/ops/nginx.md',
           '/ops/docker.md',
