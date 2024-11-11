@@ -140,19 +140,57 @@ sudo iptables -A OUTPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 
 	- 网关指向防火墙
 
-## 端口映射
+## NAT 端口映射双网通信
 
-	
-- 防火墙
-	
-	- 配置防火墙DNAT规则
+1. 安装辅助工具(用于保存)
 
-	```shell 
-	sudo iptables -t nat -A PREROUTING -d 192.168.12.180 -p tcp --dport 9000 -j DNAT --to-destination 172.16.1.251:22
+	```shell
+	sudo apt update
+	sudo apt install iptables-persistent
+	# sudo netfilter-persistent save
 	```
 
-	- 开启内核转发功能
+1. 关闭ubuntu 防火墙 
 
-- 客户端
+	```shell
+	sudo ufw disable
+	```
 
-	- 网关指向防火墙
+1. 查看映射信息 `sudo iptables -t nat -L -n -v`
+
+1. 开启内核转发功能
+
+	```shell
+	# 临时开启
+	sudo sysctl -w net.ipv4.ip_forward=1
+
+	# 重启后继续生效
+	# 在 /etc/sysctl.conf 追加net.ipv4.ip_forward=1
+	```
+
+1. 把内部网络端口映射到外部网络，内部`192.168.1.203:2404`,
+	外部主机(双网口)`172.16.1.241 && 192.168.1.241`提供访问端口`8989`
+
+	```shell
+	# 设置进数据包是 如果是 8989 端口 目标网络地址转换(DNAT)会被修改为 192.168.1.203:2404
+	# 因此就会根据本机路由把数据包转发给 192.168.1.203:2404
+	sudo iptables -t nat -A PREROUTING -p tcp --dport 8989 -j DNAT --to-destination 192.168.1.203:2404
+
+	# 在数量包离开前 把源地址伪装成本机
+	# Q: 那回来的数据包怎么办?
+	# A: iptables NAT 系统会自动维护一个连接追踪表，他会自动维护每个连接的源地址和目的地址
+	sudo iptables -t nat -A POSTROUTING -p tcp -d 192.168.1.203 --dport 2404 -j MASQUERADE
+	sudo netfilter-persistent save
+	```
+
+1. **参考方法!不伪装**, 需要目标机器上有另一个网段子路由
+
+	```shell
+	sudo iptables -t nat -A PREROUTING -p tcp -d 172.16.1.241 --dport 8989 -j DNAT --to-destination 192.168.1.203:2404
+	sudo iptables -t nat -A POSTROUTING -p tcp -d 192.168.1.203 --dport 2404 -j SNAT --to-source 172.16.1.241
+
+	# 在目标计算机加子路由
+	sudo ip route add 172.16.1.0/24 via 192.168.1.241
+	# windows
+	route add 172.16.1.0 mask 255.255.255.0 192.168.1.241
+	```
