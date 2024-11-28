@@ -10,7 +10,7 @@
 
 参考作品: 
 - <a href="https://m.ximalaya.com/album/3623979" target="_blank">喜马拉雅：每天聊点《道德经》（罗大伦）（音频节目）</a>
-- <a href="https://www.5000yan.com/mulu/" target="_blank">5000言</a>
+- <a href="https://www.5000yan.com/mulu/" target="_blank">老子5000言</a>
 
 :::
 
@@ -18,8 +18,6 @@
 ::: tip 意见反馈
 - <a href="mailto:1059248139@qq.com">点这里,快速发送邮件(1059248139@qq.com)</a> 
 :::
-
-<p style="background-color:#1E90FF; color:#F0F8FF">致自己：学会放下</p>
 
 ## 道
 
