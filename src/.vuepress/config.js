@@ -69,9 +69,16 @@ module.exports = {
           '/ops/frp.md',
           '/ops/disk.md',
           '/ops/nginx.md',
-          '/ops/docker.md',
-          '/ops/docker_server.md',
           '/ops/apt.md',
+        ]
+      },
+      {
+        title: 'Docker',
+        collapsable: false,
+        path: '/docker/',
+        children: [
+          '/docker/network.md',
+          '/docker/ser.md',
         ]
       },
       {
