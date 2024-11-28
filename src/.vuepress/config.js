@@ -79,6 +79,7 @@ module.exports = {
         children: [
           '/docker/network.md',
           '/docker/ser.md',
+          '/docker/science.md',
         ]
       },
       {
