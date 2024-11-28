@@ -59,6 +59,15 @@ module.exports = {
         ]
       },
       {
+        title: '网络',
+        collapsable: false,
+        path: '/network/',
+        children: [
+          '/network/basis.md',
+          '/network/arp_route.md',
+        ]
+      },
+      {
         title: '运维',
         collapsable: false,
         path: '/ops/',
