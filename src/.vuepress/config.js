@@ -154,9 +154,6 @@ module.exports = {
         collapsable: false,
         path: '/acrobatics/',
         children: [
-          '/acrobatics/linux.md',
-          '/acrobatics/windows.md',
-          '/acrobatics/npm.md',
         ]
       },
       {

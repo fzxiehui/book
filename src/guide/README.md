@@ -7,32 +7,7 @@
 建设中
 :::
 
-## 文档定位
-
-提供高可用、易复用、易复现的案例。
-
-## 软件开发
-
-- c/c++ (未规划)
-- cmake (计划中)
-- vue3 (计划中)
-- go (计划中)
-- python (计划中)
-- opencv (计划中)
-- TensorFlow (未规划)
-
-## 硬件相关
-
-- 常用资源 (未规划)
-- 单片机全功能板 (进行中)
-- linux全功能板 (未规划)
-
-## 运维 
-
-- [systemctl](../ops/systemctl.md)
-- [docker](../ops/docker.md)
-- [nginx](../ops/nginx.md)
-	
+<h1>TODO</h1>
 
 <p style="background-color:green">This is a paragraph.</p>
 <body>
@@ -76,8 +51,4 @@ USA
 </table>
 
 <html>
-	<p>道，可道也，非恒道也。
-	名，可名也，非恒名也。无名，万物之
-始也。有名，万物之母也。故恒无欲也，以观其眇；恒有欲也，以观
-其所噭。两者同出，异名同谓。玄之有玄，众眇之门。</p>
 </html>
