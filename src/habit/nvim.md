@@ -259,3 +259,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
 - `python` 在`nvim`中输入 `:CocInstall coc-pyright`
 - `git` 在`nvim`中输入`:CocInstall coc-git`
+
+## 配置文件
+
+<<< @/src/code/habit/newinit.vim
