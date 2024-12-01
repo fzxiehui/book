@@ -195,3 +195,43 @@ set encoding=utf-8
     nnoremap td :NERDTreeToggle<CR> " 开启/关闭nerdtree快捷键
     """""""""""""""""""""""""""树形的目录管理插件""""""""""""""""""""""""""""End
     ```
+- coc自动补全插件
+
+    - 安装
+
+    ```shell
+    # https://github.com/neoclide/coc.nvim
+    # 官方说明 node 需要 >= 16.18.0
+    sudo n v16.18.0
+    ```
+
+    配置文件, 在`plug#begin()` - `plug#end()`之间添加:
+
+    ```vim
+    " coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    ```
+
+## coc 
+
+- 安装`go`, 参考[go安装](../golang/install.md)
+- coc设置, 在nvim中输入`:CocConfig`, 填写以下内容
+
+```json
+{
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".git/"],
+      "filetypes": ["go"]
+    }
+  }
+}
+```
+
+- 添加`Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }`
+
+```vim
+" https://github.com/fatih/vim-go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+```
