@@ -235,3 +235,24 @@ set encoding=utf-8
 " https://github.com/fatih/vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 ```
+
+- 添加coc键位设置
+
+```vim
+"""""""""""""""""""""""""""Coc设置""""""""""""""""""""""""""""Begin
+" gd：跳转到定义
+nmap <silent> gd <Plug>(coc-definition)
+" gy：跳转type定义，如常量对应的type定义
+nmap <silent> gy <Plug>(coc-type-definition)
+" gi：跳转到实现，如接口的实现
+nmap <silent> gi <Plug>(coc-implementation)
+" gr：打开当前变量，函数使用位置选择
+nmap <silent> gr <Plug>(coc-references)
+
+" 输入rnn给变量重命名
+nmap <silent>rnn <Plug>(coc-rename)
+" set signcolumn=yes
+" tab 可当作 c-n使用
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+"""""""""""""""""""""""""""Coc设置""""""""""""""""""""""""""""End
+```
