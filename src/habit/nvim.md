@@ -256,3 +256,5 @@ nmap <silent>rnn <Plug>(coc-rename)
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 """""""""""""""""""""""""""Coc设置""""""""""""""""""""""""""""End
 ```
+
+- `python` 在`nvim`中输入 `:CocInstall coc-pyright`
