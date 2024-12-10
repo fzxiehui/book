@@ -1,15 +1,6 @@
-# 快速开始
+# OpenCV模板匹配
 
-## 虚拟环境及安装
-
-- 虚拟环境
-
-	```shell
-	# 创建虚拟环境
-	virtualenv venv
-	# 激活虚拟环境
-	source venv/bin/activate
-	```
+## 安装
 
 - 安装库
 

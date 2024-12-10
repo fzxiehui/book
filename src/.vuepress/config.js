@@ -141,12 +141,14 @@ module.exports = {
         ]
       },
       {
-        title: 'OpenCV',
+        title: '图像处理',
         collapsable: false,
-        path: '/opencv/',
+        path: '/cv/',
         children: [
-          '/opencv/quick_start.md',
-          '/opencv/match_multiple.md',
+          '/cv/pil.md',
+          '/cv/reform.md',
+          '/cv/match.md',
+          '/cv/match_multiple.md',
         ]
       },
       {

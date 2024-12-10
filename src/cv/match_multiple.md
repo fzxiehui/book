@@ -1,4 +1,4 @@
-# 多个对象的模板匹配
+# OpenCV多个对象的模板匹配
 
 :::tip 参考内容
 - **opencv 官方文档**: https://docs.opencv.org/4.8.0/d4/dc6/tutorial_py_template_matching.html
