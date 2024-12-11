@@ -136,6 +136,7 @@ module.exports = {
         path: '/python/',
         children: [
           '/python/venv.md',
+          '/python/change.md',
           '/python/net.md',
           '/python/pack.md',
         ]
