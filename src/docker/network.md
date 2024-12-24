@@ -6,43 +6,17 @@
 - null - 没有网络
 :::
 
-- 自定义``bridge``互通测试
+- 自定义`bridge`互通测试
 
-	1. 创建``demo2.yml``文件并写入以下内容:
+	1. 创建`demo2.yml`文件并写入以下内容:
 
 		<<< @/src/code/docker-compose/demo2.yml
 
-	1. 启动容器``docker-compose -f demo2.yml up -d``
-	1. 通过``docker exec -it demo1 /bin/bash``命令,进入``demo1``容器
-	1. 执行``ping demo2``,能``ping``通说明通信正常。
+	1. 启动容器`docker-compose -f demo2.yml up -d`
+	1. 通过`docker exec -it demo1 /bin/bash`命令,进入`demo1`容器
+	1. 执行`ping demo2`,能**ping**通说明**容器间**通信正常。
+	1. 执行`ping 10.8.0.254`,能**ping**通说明与**宿主机**通信正常。
 	1. 关闭容器``docker-compose -f demo2.yml down``
-
-## docker-compose 固定ip
-
-> 其中: `mynet`网络名 `ipv4_address: 192.168.1.10` 固定ip, `myapp: {}` 自动获取
-
-```yaml{6-8,12-13,15-20}
-version: '3'
-
-services:
-  web:
-    image: nginx
-    networks:
-      mynet:
-        ipv4_address: 192.168.1.10
-
-  app:
-    image: myapp
-    networks:
-      mynet: {}
-
-networks:
-  mynet:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 192.168.1.0/24
-```
 
 ## docker 导致网络故障
 

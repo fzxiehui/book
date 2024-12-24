@@ -5,14 +5,20 @@ services:
     container_name: demo1
     restart: always
     networks:
-      - demonetwork
+      demonetwork:
+        ipv4_address: 10.8.0.1
   demo2:
     image: praqma/network-multitool
     container_name: demo2
     restart: always
     networks:
-      - demonetwork
+      demonetwork:
+        ipv4_address: 10.8.0.2
 
 networks:
   demonetwork:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 10.8.0.0/24
+          gateway: 10.8.0.254
