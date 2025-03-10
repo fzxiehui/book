@@ -24,6 +24,14 @@ source ~/.bashrc
 
 ## Plug
 
+> 需要提前安装`git`
+> ```shell
+> sudo apt install git
+> git config --global user.name "fzxiehui"
+> git config --global user.email "xie18960920183@outlook.com"
+> ssh-keygen -t ed25519 -C "xie18960920183@outlook.com"
+> ```
+
 - 依赖
 
 ```shell
@@ -198,6 +206,10 @@ set encoding=utf-8
 - coc自动补全插件
 
     - 安装
+    ```shell
+    sudo apt install npm
+    sudo npm install n -g
+    ```
 
     ```shell
     # https://github.com/neoclide/coc.nvim
