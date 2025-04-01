@@ -13,5 +13,6 @@ run:
 
 update:
 	scp -r src/.vuepress/dist/* root@27.155.79.224:/root/book/
+	cp -r src/.vuepress/dist/* ~/http/book/
 
 
